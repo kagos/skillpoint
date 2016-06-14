@@ -1,0 +1,66 @@
+/** IMPORTS **/
+@import '../vendor/normalize-less/normalize.less';
+
+/** VARIABLES **/
+@color-female: #EE4494;
+@color-font: #575757;
+@color-male: #37D5FE;
+@font-size-h1: 36px;
+@font-size-h2: 18px;
+@font-weight-reg: 400;
+@font-weight-bold: 700;
+
+/** MIXINS **/
+.font-default() {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: @font-weight-reg;
+  color: @color-font;
+}
+
+/** TEMPLATE CLASSES **/
+.user-profile-container {
+  .font-default();
+
+  height: 96px;
+  width: 728px;
+
+  div,
+  span {
+    height: auto;
+    width: auto;
+  }
+
+  img {
+    border: 4px solid transparent;
+    float: left;
+    height: auto;
+    margin-right: 10px;
+    width: 88px;
+
+    &.female {
+      border-color: @color-female;
+    }
+
+    &.male {
+      border-color: @color-male;
+    }
+  }
+  .name {
+    float: left;
+    font-size: @font-size-h1;
+    font-weight: bold;
+
+  }
+  .address-block {
+    float: right;
+    font-size:  @font-size-h2;
+    font-weight: @font-weight-reg;
+    padding-right: 19px;
+    text-align: center;
+
+    span {
+      display: block;
+    }
+  }
+}
