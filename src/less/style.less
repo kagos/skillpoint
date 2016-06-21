@@ -1,10 +1,10 @@
 /** IMPORTS **/
 @import '../vendor/normalize-less/normalize.less';
+@import '../vendor/bootstrap/less/bootstrap.less';
 
 /** VARIABLES **/
-@color-female: #EE4494;
 @color-font: #575757;
-@color-male: #37D5FE;
+@color-main:
 @font-size-h1: 36px;
 @font-size-h2: 18px;
 @font-weight-reg: 400;
@@ -18,49 +18,25 @@
   color: @color-font;
 }
 
-/** TEMPLATE CLASSES **/
-.user-profile-container {
+/** CLASSES **/
+body {
   .font-default();
 
-  height: 96px;
-  width: 728px;
+  .header {
+    height: 90px;
+    width: 100%;
 
-  div,
-  span {
-    height: auto;
-    width: auto;
-  }
+    nav {
 
-  img {
-    border: 4px solid transparent;
-    float: left;
-    height: auto;
-    margin-right: 10px;
-    width: 88px;
-
-    &.female {
-      border-color: @color-female;
-    }
-
-    &.male {
-      border-color: @color-male;
+      .nav-link.active {
+        background-color: #2274A5;
+      }
     }
   }
-  .name {
-    float: left;
-    font-size: @font-size-h1;
-    font-weight: bold;
 
-  }
-  .address-block {
-    float: right;
-    font-size:  @font-size-h2;
-    font-weight: @font-weight-reg;
-    padding-right: 19px;
-    text-align: center;
-
-    span {
-      display: block;
-    }
+  .footer {
+    bottom: 10px;
+    left: 10px;
+    position: absolute;
   }
 }

@@ -1,6 +1,6 @@
 {
-  "name": "user-demo-app",
-  "description": "A user profile demo per spec on SkillPoint",
+  "name": "retail-app",
+  "description": "A retail app",
   "main": "index.js",
   "authors": [
     "kagos"
@@ -17,7 +17,15 @@
   ],
   "dependencies": {
     "angular": "^1.5.6",
+    "angular-animate": "^1.5.7",
     "angular-resource": "^1.5.6",
-    "normalize-less": "*"
+    "angular-route": "^1.5.7",
+    "bootstrap": "^3.3.6",
+    "jquery": "^3.0.0",
+    "normalize-less": "*",
+    "font-awesome": "^4.6.3"
+  },
+  "resolutions": {
+    "jquery": "1.9.1 - 2"
   }
 }
